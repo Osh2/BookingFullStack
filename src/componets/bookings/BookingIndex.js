@@ -4,7 +4,7 @@ const BookingIndex = ({bookingData}) => {
 
     const bookingsJSX = bookingData.map((booking)=>{
             return(
-            <BookingCard bookingDate={booking.date} bookingCustomer = {booking.customer} bookingCourse = {booking.course}  key={booking.id}/>
+            <BookingCard bookingDate={booking.date} bookingCustomer = {booking.customer} bookingCourse = {booking.course}  key={booking.id} bookingId={booking.id}/>
             )
         })
         
