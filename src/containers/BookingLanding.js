@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import BookingIndex from "../componets/BookingIndex";
+import BookingIndex from "../componets/bookings/BookingIndex";
 
 
 const BookingLanding = () => {
@@ -10,7 +10,6 @@ const BookingLanding = () => {
         fetch('http://localhost:8080/bookings/')
         .then((res) => res.json())
         .then((data) => setBookingData(data))
-        console.log(bookingData);
     }
 
     useEffect(()=>{
@@ -21,7 +20,7 @@ const BookingLanding = () => {
     
     return(
         <>    
-            <h1>TESTING</h1>
+            <h1>Bookings</h1>
             <BookingIndex bookingData = {bookingData}/>
         </>
     );

@@ -1,4 +1,3 @@
-import BookingIndex from "./BookingIndex"
 
 const BookingCard = ({bookingDate, bookingCustomer, bookingCourse}) => {
 
