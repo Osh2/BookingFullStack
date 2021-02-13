@@ -10,7 +10,8 @@ function App() {
   return (    
       <Router>
         <div>
-          <Route exact path="/" component={BookingLanding} />
+          <h1>Welcome</h1>
+          <Route path="/bookings" component={BookingLanding} />
           <Route path="/courses" component={CourseLanding}/>
           <Route path="/customers" component={CustomerLanding}/>
         </div>
