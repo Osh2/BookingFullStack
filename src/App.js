@@ -18,7 +18,7 @@ function App() {
           <Link to ="/customers"> Customers </Link>
           <Switch>
             <Route exact path="/" component={HomePage}/>
-            <Route path="/bookings" component={BookingLanding} />
+            <Route exact path="/bookings" component={BookingLanding} />
             <Route path="/bookings/details" component={BookingDetails} />
             <Route path="/courses" component={CourseLanding}/>
             <Route path="/customers" component={CustomerLanding}/>

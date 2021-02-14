@@ -13,16 +13,12 @@ const BookingCard = ({bookingDate, bookingCustomer, bookingCourse, bookingId}) =
         .catch((error) => console.log(error))
     }    
 
-    useEffect(()=>{
-        bookingDetails()
-    }, [])
-
     return(
         <div id="bookingCard">
             <h1>{bookingDate}</h1>
             <h3>{bookingCustomer.name}</h3>
             <h3>{bookingCourse.name}</h3>
-            <Link to="/bookings/details"> <button onClick={useEffect}>Details</button></Link>
+            <Link to="/bookings/details"> <button onClick={bookingDetails}>Details</button></Link>
         </div>
     )
 }
